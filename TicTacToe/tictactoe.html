@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="tictactoe.css">
+    </head>
+    <body>
+        <div class="body"> 
+            <div class="playerSelect">
+                <label for="player1">Player One = X</label>
+                <input oninput="name1()" type="text" id="player1" placeholder="Max 10 characters...">
+                <label for="player2">Player two = O</label>
+                <input oninput="name2()" type="text" id="player2" placeholder="Max 10 characters...">
+            </div>
+            <div class="gameCon">
+                <div onclick="q1()" class="square"></div>
+                <div onclick="q2()" class="square"></div>
+                <div onclick="q3()" class="square"></div>
+                <div onclick="q4()" class="square"></div>
+                <div onclick="q5()" class="square"></div>
+                <div onclick="q6()" class="square"></div>
+                <div onclick="q7()" class="square"></div>
+                <div onclick="q8()" class="square"></div>
+                <div onclick="q9()" class="square"></div>
+            </div>
+            <div class="scoreBoard">
+                <h2 id="play1">Player One</h2><h2 id="score1">score: 0</h2><br>
+                <h2 id="play2">Player Two</h2><h2 id="score2">score: 0</h2>
+            </div>
+            <button id="but" onclick="reset()" title="Double click to reset the score.">RESET</button>
+        </div>
+        
+        <script src="tictactoe.js"></script>
+    </body>
+</html>
